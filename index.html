@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body id="body" class="bg-[#F4F7FF]">
+    <section class="max-w-screen-xl min-h-screen mx-auto p-4">
+      <nav class="navbar bg-white p-4 rounded-2xl mb-4">
+        <div class="navbar-start">
+          <img src="./assets/logo.png" alt="" />
+          <a class="text-3xl ml-3"
+            >Dev<span class="font-bold text-3xl">Board</span></a
+          >
+        </div>
+        <div class="navbar-end gap-6">
+          <div
+            class="bg-[#F4F7FF] flex border border-none rounded-full py-3 px-4 gap-2"
+          >
+            <img class="w-2/4" src="./assets/checkbox.png" alt="" />
+            <p id="completed-task" class="font-bold text-xl">23</p>
+          </div>
+          <button id="theme-btn" class="btn btn-circle bg-[#F4F7FF]">
+            <img class="w-2/5" src="./assets/theme-btn.png" alt="" />
+          </button>
+        </div>
+      </nav>
+
+      <section class="grid grid-cols-4 gap-4">
+        <section class="bg-white rounded-2xl p-4 col-span-3">
+          <div class="grid grid-cols-3 gap-3 mb-4">
+            <div class="flex items-center gap-3 bg-[#F4F7FF] p-5 rounded-xl">
+              <div class="p-3 bg-white border border-none rounded-full">
+                <img src="./assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <p>Task Assigned</p>
+                <p id="assigned-task" class="font-bold">6</p>
+              </div>
+            </div>
+            <div>
+              <div
+                class="flex items-center gap-4 p-5 rounded-xl bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]"
+              >
+                <img class="w-14" src="./assets/board.png" alt="" />
+                <p class="text-white">
+                  Discover Something <br />
+                  New Today!
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 bg-[#F4F7FF] p-5 rounded-xl">
+              <div class="p-3 bg-white border border-none rounded-full">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+              <div>
+                <p id="today" class="text-base-content font-medium"></p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="border-0 h-px bg-base-300/50 my-4" />
+
+          <!-- Cards -->
+          <div class="grid grid-cols-3 gap-6">
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title1" class="card-title">
+                  Fix Mobile Button Issue
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task1-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title2" class="card-title">
+                  Add Pay Success Modal
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task2-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title3" class="card-title">
+                  Add New Reaction
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task3-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title4" class="card-title">
+                  Fix Video Loading Issue
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task4-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title5" class="card-title">
+                  Integrate AI Search
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task5-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card max-w-96 bg-[#F4F7FF] card-md rounded-2xl">
+              <div class="card-body">
+                <p class="p-3 bg-white rounded-xl max-w-fit">ShopEase</p>
+                <h2 id="task-title6" class="card-title">
+                  Watch Galaxy Unpacked
+                </h2>
+                <p class="p-5 bg-white rounded-xl mb-4">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="justify-end card-actions">
+                  <p>
+                    Deadline <br />
+                    <span class="font-medium">21 March 2025</span>
+                  </p>
+                  <button id="task6-btn" class="btn btn-primary">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white rounded-2xl col-span-1 p-4">
+          <div>
+            <div class="flex gap-4 mb-3 justify-center">
+              <img class="" src="./assets/activity.png" alt="" />
+              <h2 class="font-medium">Activity Log</h2>
+            </div>
+            <div class="flex justify-center">
+              <button id="clear-all" class="btn btn-primary bg-[#3752FD] border-none">
+                Clear History
+              </button>
+            </div>
+          </div>
+          <hr class="border-0 h-px bg-base-300/50 my-4" />
+          <div id="history" class="flex flex-col gap-4">
+            <p id="message1"></p>
+            <p id="message2"></p>
+            <p id="message3"></p>
+            <p id="message4"></p>
+            <p id="message5"></p>
+            <p id="message6"></p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="./script/script.js"></script>
+    <script src="./script/utilities.js"></script>
+  </body>
+</html>
