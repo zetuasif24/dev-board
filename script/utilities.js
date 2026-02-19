@@ -36,3 +36,14 @@ function updateCompletedStatus() {
 
   return updateCompletedTask;
 }
+
+function checkAllTasksCompleted() {
+  const assigned = parseInt(
+    document.getElementById("assigned-task").innerText
+  );
+
+  if (assigned === 0) {
+    alert("Congratulations! You have completed all the current tasks");
+  }
+}
+

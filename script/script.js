@@ -37,9 +37,10 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Update Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task1-btn");
-    alert("Board Update Successfully");
 
     const taskName = document.getElementById("task-title1").innerText;
 
@@ -59,9 +60,10 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Updated Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task2-btn");
-    alert("Board Updated Successfully");
 
     const taskName2 = document.getElementById("task-title2").innerText;
 
@@ -82,9 +84,10 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Updated Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task3-btn");
-    alert("Board Updated Successfully");
 
     const taskName3 = document.getElementById("task-title3").innerText;
 
@@ -105,10 +108,11 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Updated Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task4-btn");
-    alert("Board Updated Successfully");
-
+    
     const taskName4 = document.getElementById("task-title4").innerText;
     const time = getCurrentTime();
 
@@ -127,9 +131,10 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Updated Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task5-btn");
-    alert("Board Updated Successfully");
 
     const taskName5 = document.getElementById("task-title5").innerText;
     const time = getCurrentTime();
@@ -149,9 +154,10 @@ document
 
     updateAssignedStatus();
     updateCompletedStatus();
+    alert("Board Updated Successfully");
+    checkAllTasksCompleted()
 
     disabledButtonById("task6-btn");
-    alert("Board Updated Successfully");
 
     const taskName6 = document.getElementById("task-title6").innerText;
     const time = getCurrentTime();
