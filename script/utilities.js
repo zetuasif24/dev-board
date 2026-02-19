@@ -10,7 +10,6 @@ function getCurrentTime() {
   });
 }
 
-
 function disabledButtonById(id) {
   document.getElementById(id).classList.add("btn-disabled");
 }
@@ -37,13 +36,28 @@ function updateCompletedStatus() {
   return updateCompletedTask;
 }
 
+function addToHistory(taskName, time) {
+  const history = document.getElementById("history");
+
+  const logItem = document.createElement("div");
+
+  logItem.className = "p-4 bg-[#F4F7FF] rounded-2xl";
+
+  logItem.innerHTML = `
+    <p>
+      You have completed the task 
+      <span class="font-semibold">${taskName}</span> 
+      at ${time}
+    </p>
+  `;
+
+  history.prepend(logItem);
+}
+
 function checkAllTasksCompleted() {
-  const assigned = parseInt(
-    document.getElementById("assigned-task").innerText
-  );
+  const assigned = parseInt(document.getElementById("assigned-task").innerText);
 
   if (assigned === 0) {
     alert("Congratulations! You have completed all the current tasks");
   }
 }
-
